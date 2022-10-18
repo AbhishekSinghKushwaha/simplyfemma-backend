@@ -1,0 +1,870 @@
+{
+	"info": {
+		"_postman_id": "07c9fd8c-44b8-4138-8406-2658bd138ad1",
+		"name": "COC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BO",
+			"item": [
+				{
+					"name": "Create BO details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"boDetails\":{\r\n            \"boCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/bo/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"bo",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user Bo Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/bo/alldata/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"bo",
+								"alldata",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Bo Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/bo/alldata/getAllBoDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"bo",
+								"alldata",
+								"getAllBoDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete BO Details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/bo/alldata/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"bo",
+								"alldata",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Bo Details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"boDetails\":{\r\n            \"boCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/bo/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"bo",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FDI",
+			"item": [
+				{
+					"name": "Create Fdi details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fdiAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n             \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"fdiDetails\":{\r\n            \"fdiCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignInvestor\":\"briefParticularsAboutTheForeignInvestor\",\r\n            \"detailsForeignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\":\"detailsOfForrignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\",\r\n            \"copiesBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\":\"copiesOfBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\",\r\n            \"natureContraventionAndReasonsForTheContravention\":\"natureOfContraventionAndReasonsForTheContravention\",\r\n            \"SlNoTA\":1,\r\n            \"TAnameRemitter\":\"TAnameOfRemitter\",\r\n            \"TAtotalamount\":545,\r\n            \"TAdelayifany\":\"TAdelayIfAny\",\r\n            \"TATotal\":1545,\r\n            \"TBnameofInvestor\":\"TBnameOfInvestor\",\r\n            \"TBnoSharesAlloted\":\"4\",\r\n            \"TBamountWhichSharesAlloted\":\"TBamountForWhichSharesAlloted\",\r\n            \"TBdelayifany\":\"TBdelayIfAny\",\r\n            \"TBTotal\":2515,\r\n            \"TCSlNo\":2,\r\n            \"TcnameRemitter\":\"TcnameOfRemitter\",\r\n            \"TCtotalamountINR\":151,\r\n            \"TCExcessshareApplicationMoney\":\"TCExcessShareApplicationMoney\",\r\n            \"TCamountinForex\":154541,\r\n            \"ACslNo\":3,\r\n            \"nameACenterAuthorizationCapital\":\"nameACenterAuthorizationZCapital\",\r\n            \"ACEffectFrom\":\"ACwithEffectFrom\",\r\n            \"ACdateBoardMeeting\":\"ACdateBoardMeeting\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/fdi/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1323",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"fdi",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1323"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrive user Fdi details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/fdi/fdi/alldata/78454",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"fdi",
+								"fdi",
+								"alldata",
+								"78454"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrive all fdi details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/fdi/fdi/alldata/getAllFdiDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"fdi",
+								"fdi",
+								"alldata",
+								"getAllFdiDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete fdi details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/fdi/fdi/alldata/78454",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"fdi",
+								"fdi",
+								"alldata",
+								"78454"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update FDI Details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fdiAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n             \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"fdiDetails\":{\r\n            \"fdiCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignInvestor\":\"briefParticularsAboutTheForeignInvestor\",\r\n            \"detailsForeignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\":\"detailsOfForrignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\",\r\n            \"copiesBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\":\"copiesOfBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\",\r\n            \"natureContraventionAndReasonsForTheContravention\":\"natureOfContraventionAndReasonsForTheContravention\",\r\n            \"SlNoTA\":1,\r\n            \"TAnameRemitter\":\"TAnameOfRemitter\",\r\n            \"TAtotalamount\":545,\r\n            \"TAdelayifany\":\"TAdelayIfAny\",\r\n            \"TATotal\":1545,\r\n            \"TBnameofInvestor\":\"TBnameOfInvestor\",\r\n            \"TBnoSharesAlloted\":\"4\",\r\n            \"TBamountWhichSharesAlloted\":\"TBamountForWhichSharesAlloted\",\r\n            \"TBdelayifany\":\"TBdelayIfAny\",\r\n            \"TBTotal\":2515,\r\n            \"TCSlNo\":2,\r\n            \"TcnameRemitter\":\"TcnameOfRemitter\",\r\n            \"TCtotalamountINR\":151,\r\n            \"TCExcessshareApplicationMoney\":\"TCExcessShareApplicationMoney\",\r\n            \"TCamountinForex\":154541,\r\n            \"ACslNo\":3,\r\n            \"nameACenterAuthorizationCapital\":\"nameACenterAuthorizationZCapital\",\r\n            \"ACEffectFrom\":\"ACwithEffectFrom\",\r\n            \"ACdateBoardMeeting\":\"ACdateBoardMeeting\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/fdi/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1323",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"fdi",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1323"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ECB",
+			"item": [
+				{
+					"name": "Create ECB Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ecbAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n           \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n             \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"ecbDetails\":{\r\n            \"ecbCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignLender\":\"nameOfOverseasEntity\",\r\n            \"ApplicantAnEligibleBorrower\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"LenderEligibleLender\":\"natureOfEntityWOSorJV\",\r\n            \"LenderAnEquityHolder\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"whatisLevelOfHisHoldingAtTheTimeOfLoanAgreement\":\"detailsOfOtherFinancialCommitment\",\r\n            \"amountForeign\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"rateInterest\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"periodLoan\":\"detailsOfAPRSubmitted\",\r\n            \"amountForeignCurrency\":\"natureOfContraventionsAndReasonForTheContravention\",\r\n            \"amountInr\":\"allSupportingDocumentsMayBeSubmitted\",\r\n            \"detailsDrawDown\":\"natureOfEntityWOSorJV\",\r\n            \"detailsLRNno\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"detailsEcb2returnsSubmittedandPeriodOfReturnandDateOfSubmission\":\"detailsOfOtherFinancialCommitment\",\r\n            \"detailsUtilizationOfEcbInForeignCurrencyAndIndianRupee\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"natureContraventionandReasonsForTheContravention\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"natureOfContraventionsAndReasonForTheContravention\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/ecb/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1550",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"ecb",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1550"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user ecb details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/ecb/alldata/487",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"ecb",
+								"alldata",
+								"487"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ECB Details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/ecb/alldata/487",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"ecb",
+								"alldata",
+								"487"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All ecb details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/ecb/alldata/getAllEcbDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"ecb",
+								"alldata",
+								"getAllEcbDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update ecb details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ecbAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n           \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n             \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"ecbDetails\":{\r\n            \"ecbCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignLender\":\"nameOfOverseasEntity\",\r\n            \"ApplicantAnEligibleBorrower\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"LenderEligibleLender\":\"natureOfEntityWOSorJV\",\r\n            \"LenderAnEquityHolder\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"whatisLevelOfHisHoldingAtTheTimeOfLoanAgreement\":\"detailsOfOtherFinancialCommitment\",\r\n            \"amountForeign\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"rateInterest\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"periodLoan\":\"detailsOfAPRSubmitted\",\r\n            \"amountForeignCurrency\":\"natureOfContraventionsAndReasonForTheContravention\",\r\n            \"amountInr\":\"allSupportingDocumentsMayBeSubmitted\",\r\n            \"detailsDrawDown\":\"natureOfEntityWOSorJV\",\r\n            \"detailsLRNno\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"detailsEcb2returnsSubmittedandPeriodOfReturnandDateOfSubmission\":\"detailsOfOtherFinancialCommitment\",\r\n            \"detailsUtilizationOfEcbInForeignCurrencyAndIndianRupee\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"natureContraventionandReasonsForTheContravention\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"natureOfContraventionsAndReasonForTheContravention\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/ecb/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1550",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"ecb",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1550"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LO",
+			"item": [
+				{
+					"name": "Create Lo Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loAllDetails\":{\r\n        \"entityDetails\":{\r\n           \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"loDetails\":{\r\n            \"loCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/lo/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"lo",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Lo Details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/lo/alldata/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"lo",
+								"alldata",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user lo details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/lo/alldata/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"lo",
+								"alldata",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update lo details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loAllDetails\":{\r\n        \"entityDetails\":{\r\n           \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"loDetails\":{\r\n            \"loCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/lo/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"lo",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all lo details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/lo/alldata/getAllLoDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"lo",
+								"alldata",
+								"getAllLoDetails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ODI",
+			"item": [
+				{
+					"name": "Create ODI Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"odiAllDetails\":{\r\n        \"entityDetails\":{\r\n             \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"odiDetails\":{\r\n            \"odiCode\":154854,\r\n            \"nameTheApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTaken\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"nameOverseasEntity\":\"nameOfOverseasEntity\",\r\n            \"natureActivitiesUnderTakenByOverseasEntity\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"natureEntityWOSorJV\":\"natureOfEntityWOSorJV\",\r\n            \"detailsRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"detailsOtherFinancialCommitment\":\"detailsOfOtherFinancialCommitment\",\r\n            \"detailsUINAppliedAndRecieved\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"approvalOtherRegulatorsIfRequired\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"detailsAPRSubmitted\":\"detailsOfAPRSubmitted\",\r\n            \"natureContraventionsAndReasonForTheContravention\":\"natureOfContraventionsAndReasonForTheContravention\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"allSupportingDocumentsMayBeSubmitted\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/odi/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1347",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"odi",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1347"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ODI Details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/odi/alldata/78454",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"odi",
+								"alldata",
+								"78454"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/odi/alldata/getAllOdiDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"odi",
+								"alldata",
+								"getAllOdiDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user Odi Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/odi/alldata/78454",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"odi",
+								"alldata",
+								"78454"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Odi Details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"odiAllDetails\":{\r\n        \"entityDetails\":{\r\n             \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"odiDetails\":{\r\n            \"odiCode\":154854,\r\n            \"nameTheApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTaken\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"nameOverseasEntity\":\"nameOfOverseasEntity\",\r\n            \"natureActivitiesUnderTakenByOverseasEntity\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"natureEntityWOSorJV\":\"natureOfEntityWOSorJV\",\r\n            \"detailsRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"detailsOtherFinancialCommitment\":\"detailsOfOtherFinancialCommitment\",\r\n            \"detailsUINAppliedAndRecieved\":\"detailsOfUINAppliedAndRecieved\",\r\n            \"approvalOtherRegulatorsIfRequired\":\"approvalOfOtherRegulatorsIfRequired\",\r\n            \"detailsAPRSubmitted\":\"detailsOfAPRSubmitted\",\r\n            \"natureContraventionsAndReasonForTheContravention\":\"natureOfContraventionsAndReasonForTheContravention\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"allSupportingDocumentsMayBeSubmitted\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/odi/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1347",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"odi",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1347"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PO",
+			"item": [
+				{
+					"name": "Create po details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"poAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"poDetails\":{\r\n            \"poCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/po/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"po",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all po details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/po/alldata/getAllPoDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"po",
+								"alldata",
+								"getAllPoDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user po details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/po/alldata/1815",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"po",
+								"alldata",
+								"1815"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete po details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/po/alldata/1815",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"po",
+								"alldata",
+								"1815"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update po details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"poAllDetails\":{\r\n        \"entityDetails\":{\r\n            \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n            \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"poDetails\":{\r\n            \"poCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenwithNic\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"validityPeriodTheApproval\":\"nameOfOverseasEntity\",\r\n            \"incomeAndExpendiruteTheLoBo\":\"natureOfActivitiesUnderTakenByOverseasEntity\",\r\n            \"datesOfSubmissionAnnualActivityCertificates\":\"natureOfEntityWOSorJV\",\r\n            \"natureContraventionsAndReasonsForTheContravention\":\"detailsOfRemittanceSentandDateOfRemittanceandAmountInFCYandInINR\",\r\n            \"allSupportingDocumentsMaySubmitted\":\"detailsOfOtherFinancialCommitment\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/po/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"po",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "Create others details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"othersAllDetails\":{\r\n         \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n           \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"othersDetails\":{\r\n            \"othersCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignInvestor\":\"briefParticularsAboutTheForeignInvestor\",\r\n            \"detailsForeignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\":\"detailsOfForrignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\",\r\n            \"copiesBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\":\"copiesOfBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\",\r\n            \"natureContraventionAndReasonsForTheContravention\":\"natureOfContraventionAndReasonsForTheContravention\",\r\n            \"SlNoTA\":1,\r\n            \"TAnameRemitter\":\"TAnameOfRemitter\",\r\n            \"TAtotalamount\":545,\r\n            \"TAdelayifany\":\"TAdelayIfAny\",\r\n            \"TATotal\":1545,\r\n            \"TBnameofInvestor\":\"TBnameOfInvestor\",\r\n            \"TBnoSharesAlloted\":\"4\",\r\n            \"TBamountWhichSharesAlloted\":\"TBamountForWhichSharesAlloted\",\r\n            \"TBdelayifany\":\"TBdelayIfAny\",\r\n            \"TBTotal\":2515,\r\n            \"TCSlNo\":2,\r\n            \"TcnameRemitter\":\"TcnameOfRemitter\",\r\n            \"TCtotalamountINR\":151,\r\n            \"TCExcessshareApplicationMoney\":\"TCExcessShareApplicationMoney\",\r\n            \"TCamountinForex\":154541,\r\n            \"ACslNo\":3,\r\n            \"nameACenterAuthorizationCapital\":\"nameACenterAuthorizationZCapital\",\r\n            \"ACEffectFrom\":\"ACwithEffectFrom\",\r\n            \"ACdateBoardMeeting\":\"ACdateBoardMeeting\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/others/alldata/e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"others",
+								"alldata",
+								"e44fdeef-922e-4c2f-9f0c-107ae1f1cc1325"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user others details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/others/alldata/54515",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"others",
+								"alldata",
+								"54515"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all others details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/others/alldata/getAllOthersDetails",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"others",
+								"alldata",
+								"getAllOthersDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete others details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/coc/others/alldata/54515",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"others",
+								"alldata",
+								"54515"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update others details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"othersAllDetails\":{\r\n         \"entityCode\":149,\r\n            \"legalNameBusiness\": \"Ganapathy\",\r\n            \"cinNumber\":\"L21091KA2019OPC141331\",\r\n            \"panNumber\":\"ALWPG5805H\",\r\n            \"selectnicOption\":\"NIC Code of 2004\",\r\n            \"mainactivities\":\"mainActivities\",\r\n            \"additionalactivities\":\"additionalActivities\",\r\n            \"selectactivityOption\":\"Activity 3\",\r\n            \"buildingNo\":\"5654\",\r\n            \"floorNo\":\"1\",\r\n            \"nameThePremisesOrBuilding\":\"simplyfema\",\r\n            \"Street\":\"nagar\",\r\n            \"Area\":\"sector11\",\r\n            \"City\":\"hyd\",\r\n            \"State\":\"maharastra\",\r\n            \"Country\":\"India\",\r\n            \"Pincode\":500045,\r\n            \"officeemailAddress\":\"email@gmail.com\",\r\n            \"mobileNo\":\"9876543210\",\r\n            \"officeTelephoneNo\":\"044 23069745\",\r\n            \"officeFaxNo\":\"+12 234 2345454\"\r\n        },\r\n        \"compoundingDetails\":{\r\n           \"compoundingCode\":12,\r\n            \"natureContravention\":\"natureOfContraventions\",\r\n            \"selectFema\":\"2\",   \r\n            \"selectRegulationNo\": 4,\r\n            \"topicNameDescription\":[\"Others1\",\"Others2\"],\r\n            \"sampleOthers\":[\r\n                {\r\n                    \"sample_others_1\":true,\r\n                    \"sample_others_2\":true\r\n                },\r\n                {\r\n                    \"sample_others_2\":true,\r\n                    \"sample_others_3\":true\r\n                }\r\n            ],\r\n            \"selectCAAoption\":\"Regional\",\r\n            \"selectcentralOptions\":\"Mumbai\",\r\n            \"subjectCompounding\":\"Subject of contravention details\",\r\n            \"sample_subjectOfCompounding_1\":true,\r\n            \"sample_subjectOfCompounding_2\":true,\r\n            \"rbiReferenceLetter\":[\"rbiReferenceEmail of contravention details\", \"rbi2\"],\r\n            \"sampleRbi\":[\r\n                {\r\n                    \"sample_rbi_1\":true,\r\n                    \"sample_rbi_2\":true\r\n                },\r\n                {\r\n                    \"sample_rbi_2\":true,\r\n                    \"sample_rbi_3\":true\r\n                }\r\n            ],\r\n            \"residentoutsideIndia\":\"India\",\r\n            \"sample_indiaOrNot_1\":true,\r\n            \"sample_indiaOrNot_3\":true,\r\n            \"nameAdjudicatingAuthority\":\"adjudicatingAuthorityName\",\r\n            \"compoundingApplicationfee\":6000,\r\n            \"inFavour\":\"inFavour\",\r\n            \"officeTeleNo\":9685321472,\r\n            \"selectpayOption\":\"Ahmedabad\"\r\n        },\r\n        \"submissionDetails\":{\r\n            \"submissionCode\":121,\r\n            \"background_input\":[\"Background1\",\"Background2\"],\r\n            \"transactionDetails\":\"transactionDetails\",\r\n            \"natureofcontraventions_input\":[\"natureofContraventions\",\"natureofContraventions2\"],\r\n            \"delayreasons_input\":[\"delayReasons\",\"delayReasons2\"],\r\n            \"petitionrequest_input\":[\"applicationRequest\",\"applicationRequest 2\"],\r\n            \"letterOfAuthority\":\"letterofAuthority\",\r\n            \"sample1\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample2\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample3\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ],\r\n            \"sample4\":[\r\n                {\r\n                    \"sample_1\":true,\r\n                    \"sample_4\":true\r\n                },\r\n                {\r\n                    \"sample_2\":true,\r\n                    \"sample_3\":true\r\n                }\r\n            ]\r\n        },\r\n        \"othersDetails\":{\r\n            \"othersCode\":154854,\r\n            \"nameApplicant\":\"nameofApplicant\",\r\n            \"incometaxPan\":15415458,\r\n            \"natureActivitiesUnderTakenNicCode\":\"natureOfActivitiesUnderTakenNicCode\",\r\n            \"briefParticularsAboutForeignInvestor\":\"briefParticularsAboutTheForeignInvestor\",\r\n            \"detailsForeignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\":\"detailsOfForrignInwardRemittancesRecievedByApplicantCompanyFromDateOfIncorporationTillDate\",\r\n            \"copiesBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\":\"copiesOfBalanceSheetDuringThePeriodOfReceiptOfShareApplicationMoney\",\r\n            \"natureContraventionAndReasonsForTheContravention\":\"natureOfContraventionAndReasonsForTheContravention\",\r\n            \"SlNoTA\":1,\r\n            \"TAnameRemitter\":\"TAnameOfRemitter\",\r\n            \"TAtotalamount\":545,\r\n            \"TAdelayifany\":\"TAdelayIfAny\",\r\n            \"TATotal\":1545,\r\n            \"TBnameofInvestor\":\"TBnameOfInvestor\",\r\n            \"TBnoSharesAlloted\":\"4\",\r\n            \"TBamountWhichSharesAlloted\":\"TBamountForWhichSharesAlloted\",\r\n            \"TBdelayifany\":\"TBdelayIfAny\",\r\n            \"TBTotal\":2515,\r\n            \"TCSlNo\":2,\r\n            \"TcnameRemitter\":\"TcnameOfRemitter\",\r\n            \"TCtotalamountINR\":151,\r\n            \"TCExcessshareApplicationMoney\":\"TCExcessShareApplicationMoney\",\r\n            \"TCamountinForex\":154541,\r\n            \"ACslNo\":3,\r\n            \"nameACenterAuthorizationCapital\":\"nameACenterAuthorizationZCapital\",\r\n            \"ACEffectFrom\":\"ACwithEffectFrom\",\r\n            \"ACdateBoardMeeting\":\"ACdateBoardMeeting\"\r\n        },\r\n        \"annexuresDetails\":{\r\n            \"annexuresCode\":15,\r\n            \"annexureCheckbox1\":true,\r\n            \"annexureCheckbox2\":true,\r\n            \"annexureCheckbox3\":true,\r\n            \"annexureCheckbox4\":true,\r\n            \"annexureCheckbox5\":true,\r\n            \"annexureCheckbox6\":true,\r\n            \"annexureCheckbox7\":true,\r\n            \"annexureCheckbox8\":true,\r\n            \"annexureCheckbox9\":true,\r\n            \"annexureCheckbox10\":true,\r\n            \"annexureCheckbox11\":true,\r\n            \"selectAnnexure1\":\"selectAnnexure1\",\r\n            \"selectAnnexure2\":\"selectAnnexure2\",\r\n            \"selectAnnexure3\":\"selectAnnexure2\",\r\n            \"selectAnnexure4\":\"selectAnnexure2\",\r\n            \"selectAnnexure5\":\"selectAnnexure2\",\r\n            \"selectAnnexure6\":\"selectAnnexure2\",\r\n            \"selectAnnexure7\":\"selectAnnexure2\",\r\n            \"selectAnnexure8\":\"selectAnnexure2\",\r\n            \"selectAnnexure9\":\"selectAnnexure2\",\r\n            \"selectAnnexure10\":\"selectAnnexure2\",\r\n            \"selectAnnexure11\":\"selectAnnexure2\"\r\n        },\r\n        \"authorisedSignatory\":{\r\n            \"authorisedCode\":1232,\r\n            \"nameOfPerson\":\"nameOfPerson\",\r\n            \"addressOfPerson\":\"Address\",\r\n            \"Pannumber\":15561,\r\n            \"designation\":\"designation\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/coc/others/alldata/54515",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"coc",
+								"others",
+								"alldata",
+								"54515"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

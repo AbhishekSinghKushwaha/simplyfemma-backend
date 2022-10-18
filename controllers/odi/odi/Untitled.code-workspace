@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "/Volumes/ForkProjects/ForkProjects"
+		},
+		{
+			"path": "/Users/tanish/go/src/vibe_product"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"sqltools.connections": [
+			{
+				"database": "vibeadserver",
+				"dialect": "MySQL",
+				"name": "Revive - MySQL - Linode",
+				"password": "Z00TFl!Es",
+				"port": 3306,
+				"server": "139.162.57.156",
+				"username": "forkadmin"
+			},
+			{
+				"database": "adgro",
+				"dialect": "MySQL",
+				"name": "Adgebra - Change Logs",
+				"password": "A1!@#P@nd@^a$",
+				"port": 8710,
+				"server": "172.104.170.113",
+				"username": "adgro"
+			}
+		],
+		"codedeploy.region": "ap-south-1",
+		"codedeploy.applicationName": "Context-Ads-Server",
+		"codedeploy.isApplicationWorkspace": true
+	}
+}

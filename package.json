@@ -1,0 +1,43 @@
+{
+  "name": "simply_fema_backend",
+  "version": "1.0.0",
+  "description": "Simply-Fema-Backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "async-busboy": "^1.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "config": "^3.2.6",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "http": "0.0.0",
+    "jio": "^3.39.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.9",
+    "mongoose-validator": "^2.1.0",
+    "morgan": "^1.10.0",
+    "mv": "^2.1.1",
+    "request": "^2.88.2",
+    "swagger-ui-express": "^4.1.4",
+    "util": "^0.12.3",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

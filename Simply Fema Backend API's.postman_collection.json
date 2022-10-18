@@ -1,0 +1,2745 @@
+{
+	"info": {
+		"_postman_id": "a4557105-6a5d-4b70-afc7-be4cfa787383",
+		"name": "Simply Fema Backend API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:4001/user/",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userDetails\": {\n        \"firstName\": \"Simply\",\n        \"lastName\": \"Fema\",\n        \"email\": \"user@simplyfema.com\",\n        \"phoneNumber\": \"8866554433\",\n        \"companyName\": \"SimplyFema\",\n        \"userRole\" : \"Admin\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4001/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4001/user/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userDetails\": {\n        \"firstName\": \"Simply\",\n        \"lastName\": \"Fema\",\n        \"email\": \"user@simplyfema.com\",\n        \"phoneNumber\": \"8866554433\",\n        \"companyName\": \"SimplyFema\",\n        \"userRole\" : \"Admin\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4001/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4001/user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userDetails\": {\n        \"phoneNumber\": \"8866554433\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4001/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ODI",
+			"item": [
+				{
+					"name": "DIsinvestment",
+					"item": [
+						{
+							"name": "http://localhost:4001/odi/disinvestment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"disinvestmentDetails\": {\n        \"disInvestmentBankcode\" : \"669879\",\n        \"disInvestmentPeriod\"  : \"01/01/2020 - 02/02/2020\",\n        \"disInvestmentPartyCode\" : \"3424\",\n        \"disInvestmentRoute\" : \"A\",\n        \"disInvestmentType\" : \"B\",\n        \"disInvestmentDate\" : \"01/01/2020\",\n        \"disInvestmentPANNo\" : \"FDETS243L\",\n        \"disInvestmentReceivingPartyName\" : \"ABC\",\n        \"disInvestmentActivityDetail\" : \"ABCDETAILS\",\n        \"disInvestmentMethod\" : \"A Method\",\n        \"disInvestmentPartyHoldingPct\" : \"TEST\",\n        \"disInvestmentCumulativeDirectInv\" : \"3231\",\n        \"disInvestmentDatewiseRemitanceDetailcode\" : \"4234\",\n        \"disInvestmentFairValue\" : \"4324\",\n        \"disInvestmentWriteOff\" : true,\n        \"disInvestmentWriteOffType\" : \"ABC\",\n        \"disInvestmentWriteOffAmount\" : \"2320\",\n        \"disInvestmentAmountWriteOff\" : \"1323\",\n        \"disInvestmentAmountRepatriated\" : true,\n        \"disInvestmentAmountRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentAmountRepatriatedType\": \"A Type\",\n        \"disInvestmentAmountRepatriatedAmount\": \"1313\",\n        \"disInvestmentTotalAmountRepatriatedAPR\": true,\n        \"disInvestmentTotalRepatriatedType\" : \"vvcv\",\n        \"disInvestmentTotalRepatriatedAmount\": \"32133\",\n        \"disInvestmentTotalRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentCertificate\" : \"Yes\",\n        \"disInvestmentPlace\": \"Mumbai\",\n        \"disInvestmentAnnexture\": \"Yes\",\n        \"disInvestmentCurrentDate\" :\"02/02/2020\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/disinvestment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"disinvestment"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/disinvestment",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"disinvestmentDetails\": {\n        \"disInvestmentBankcode\" : \"54669879\",\n        \"disInvestmentPeriod\"  : \"01/01/2020 - 02/02/2020\",\n        \"disInvestmentPartyCode\" : \"34333324\",\n        \"disInvestmentRoute\" : \"A\",\n        \"disInvestmentType\" : \"BA\",\n        \"disInvestmentDate\" : \"01/01/2020\",\n        \"disInvestmentPANNo\" : \"FDETS243L\",\n        \"disInvestmentReceivingPartyName\" : \"ABC\",\n        \"disInvestmentActivityDetail\" : \"ABCdsDETAILS\",\n        \"disInvestmentMethod\" : \"A Method\",\n        \"disInvestmentPartyHoldingPct\" : \"21321\",\n        \"disInvestmentCumulativeDirectInv\" : \"3231\",\n        \"disInvestmentDatewiseRemitanceDetailcode\" : \"4234\",\n        \"disInvestmentFairValue\" : \"4324\",\n        \"disInvestmentWriteOff\" : true,\n        \"disInvestmentWriteOffType\" : \"ABC\",\n        \"disInvestmentWriteOffAmount\" : \"2320\",\n        \"disInvestmentAmountWriteOff\" : \"1323\",\n        \"disInvestmentAmountRepatriated\" : true,\n        \"disInvestmentAmountRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentAmountRepatriatedType\": \"A Type\",\n        \"disInvestmentAmountRepatriatedAmount\": \"1313\",\n        \"disInvestmentTotalAmountRepatriatedAPR\": true,\n        \"disInvestmentTotalRepatriatedType\" : \"vvcv\",\n        \"disInvestmentTotalRepatriatedAmount\": \"32133\",\n        \"disInvestmentTotalRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentCertificate\" : \"Yes\",\n        \"disInvestmentPlace\": \"Mumbai\",\n        \"disInvestmentAnnexture\": \"Yes\",\n        \"disInvestmentCurrentDate\" :\"02/02/2020\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/disinvestment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"disinvestment"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/disinvestment",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"disinvestmentDetails\": {\n        \"disInvestmentBankcode\" : \"54669879\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/disinvestment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"disinvestment"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/cdi",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"disinvestmentDetails\": {\n        \"disInvestmentBankcode\" : \"669879\",\n        \"disInvestmentPeriod\"  : \"01/01/2020 - 02/02/2020\",\n        \"disInvestmentPartyCode\" : \"3424\",\n        \"disInvestmentRoute\" : \"A\",\n        \"disInvestmentType\" : \"B\",\n        \"disInvestmentDate\" : \"01/01/2020\",\n        \"disInvestmentPANNo\" : \"FDETS243L\",\n        \"disInvestmentReceivingPartyName\" : \"ABC\",\n        \"disInvestmentActivityDetail\" : \"ABCDETAILS\",\n        \"disInvestmentMethod\" : \"A Method\",\n        \"disInvestmentPartyHoldingPct\" : \"TEST\",\n        \"disInvestmentCumulativeDirectInv\" : \"3231\",\n        \"disInvestmentDatewiseRemitanceDetailcode\" : \"4234\",\n        \"disInvestmentFairValue\" : \"4324\",\n        \"disInvestmentWriteOff\" : true,\n        \"disInvestmentWriteOffType\" : \"ABC\",\n        \"disInvestmentWriteOffAmount\" : \"2320\",\n        \"disInvestmentAmountWriteOff\" : \"1323\",\n        \"disInvestmentAmountRepatriated\" : true,\n        \"disInvestmentAmountRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentAmountRepatriatedType\": \"A Type\",\n        \"disInvestmentAmountRepatriatedAmount\": \"1313\",\n        \"disInvestmentTotalAmountRepatriatedAPR\": true,\n        \"disInvestmentTotalRepatriatedType\" : \"vvcv\",\n        \"disInvestmentTotalRepatriatedAmount\": \"32133\",\n        \"disInvestmentTotalRepatriatedDate\" : \"01/01/2020\",\n        \"disInvestmentCertificate\" : \"Yes\",\n        \"disInvestmentPlace\": \"Mumbai\",\n        \"disInvestmentAnnexture\": \"Yes\",\n        \"disInvestmentCurrentDate\" :\"02/02/2020\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/cdi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"cdi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/cdi",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cummulativeDirectInvestmentDetails\": {\n       \"cummulativeDirectInvestmentCode\" : \"2354513\",\n    \"cummulativeDirectInvestmentType\" : \"B TYPE\",\n    \"cummulativeDirectInvestmentAmount\" : \"2323\",\n    \"cummulativeDirectInvestmentCurrentDate\"  : \"01/01/2020\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/cdi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"cdi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/cdi",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cummulativeDirectInvestmentDetails\": {\n       \"cummulativeDirectInvestmentCode\" : \"2354513\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/cdi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"cdi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/receivingparty",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"receivingPartyDetails\": {\n       receivingPartyCode,\n        receivingPartyType,\n        receivingPartyName,\n        receivingPartyPct,\n        receivingPartyCurrentDate }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/receivingparty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"receivingparty"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/receivingparty",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"receivingPartyDetails\": {\n        \"receivingPartyCode\": \"2432222\",\n        \"receivingPartyType\": \"CType\",\n        \"receivingPartyName\": \"TESTPARTY\",\n        \"receivingPartyPct\": \"213132\",\n        \"receivingPartyCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/receivingparty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"receivingparty"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/receivingparty",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"receivingPartyDetails\": {\n        \"receivingPartyCode\": \"2432222\",\n        \"receivingPartyType\": \"CType\",\n        \"receivingPartyName\": \"TESTPARTY\",\n        \"receivingPartyPct\": \"213132\",\n        \"receivingPartyCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/receivingparty",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"receivingparty"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/remitance",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"remitanceDetails\": {\n        \"remitanceCode\": \"3244442\",\n        \"remitanceDate\": \"01/01/20\",\n        \"remitanceMethod\": \"C TYPE\",\n        \"remitanceCategory\": \"ABC\",\n        \"remitanceAmount\": \"3423\",\n        \"remitanceCurrencyType\" : \"A TYPE\",\n        \"remitanceCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/remitance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"remitance"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/remitance",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"remitanceDetails\": {\n        \"remitanceCode\": \"3244442\",\n        \"remitanceDate\": \"01/01/20\",\n        \"remitanceMethod\": \"CYPE\",\n        \"remitanceCategory\": \"ABC\",\n        \"remitanceAmount\": \"3423\",\n        \"remitanceCurrencyType\" : \"A TYPE\",\n        \"remitanceCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/remitance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"remitance"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/remitance",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"remitanceDetails\": {\n        \"remitanceCode\": \"3244442\",\n        \"remitanceDate\": \"01/01/20\",\n        \"remitanceMethod\": \"CYPE\",\n        \"remitanceCategory\": \"ABC\",\n        \"remitanceAmount\": \"3423\",\n        \"remitanceCurrencyType\" : \"A TYPE\",\n        \"remitanceCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/remitance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"remitance"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Annual Performance Report",
+					"item": [
+						{
+							"name": "http://localhost:4001/odi/apr",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprDetails\": {\n        \"aprDate\": \"01/01/20\",\n        \"aprJVPeriod\": \"01/01/20\",\n        \"aprCapStructurecode\": \"1434\",\n        \"aprOpsDetailCode\": \"22341\",\n        \"aprRepatriationDetailCode\": \"52344\",\n        \"aprInvestmentSDSDetailCode\": \"42341\",\n        \"aprCertificateCode\": \"1233\",\n        \"aprDesignatedSignature\": \"ASDF\",\n        \"partyCode\": \"154646\",\n        \"aprDesignatedPlace\": \"TRTEG\",\n        \"aprDesignatedSignDate\": \"01/01/20\",\n        \"aprStatutoryAudit\": \"rytyyr\",\n        \"aprStatutorySignature\": \"dgfgf\",\n        \"aprStatutoryPlace\": \"sfasasd\",\n        \"aprStatutorySignDate\": \"01/01/20\",\n        \"aprStatutoryCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/apr",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"apr"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/apr",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprDetails\": {\n        \"aprDate\": \"01/01/20\",\n        \"aprJVPeriod\": \"01/01/20\",\n        \"aprCapStructurecode\": \"1434\",\n        \"aprOpsDetailCode\": \"22341\",\n        \"aprRepatriationDetailCode\": \"52344\",\n        \"aprInvestmentSDSDetailCode\": \"42341\",\n        \"aprCertificateCode\": \"1233\",\n        \"aprDesignatedSignature\": \"ASDF\",\n        \"partyCode\": \"154323646\",\n        \"aprDesignatedPlace\": \"TRERRTEG\",\n        \"aprDesignatedSignDate\": \"01/01/20\",\n        \"aprStatutoryAudit\": \"rytyyr\",\n        \"aprStatutorySignature\": \"dgfgf\",\n        \"aprStatutoryPlace\": \"sfasasd\",\n        \"aprStatutorySignDate\": \"01/01/20\",\n        \"aprStatutoryCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/apr",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"apr"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/apr",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprDetails\": {\n        \"partyCode\": \"154323646\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/apr",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"apr"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapops",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapOpsDetails\": {\n        \"aprCapOpsCode\": \"42343\",\n        \"aprCapOpsDate\": \"01/01/20\",\n        \"aprCapOpsNetProfit\": \"32424\",\n        \"aprCapOpsDividend\": \"213123\",\n        \"aprCapOpsNetWorth\": \"12323\",\n        \"aprCapOpscurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapops",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapops"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapops",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapOpsDetails\": {\n        \"aprCapOpsCode\": \"4234123233\",\n        \"aprCapOpsDate\": \"01/01/20\",\n        \"aprCapOpsNetProfit\": \"332424\",\n        \"aprCapOpsDividend\": \"213123\",\n        \"aprCapOpsNetWorth\": \"12323\",\n        \"aprCapOpscurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapops",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapops"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapops",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapOpsDetails\": {\n        \"aprCapOpsCode\": \"4234123233\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapops",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapops"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprrepatriation",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprRepatriationDetails\": {\n        \"aprRepatriationCode\": \"42344444\",\n        \"aprRepatriationDate\": \"01/01/20\",\n        \"aprRepatriationDividend\": \"3243\",\n        \"aprRepatriationRepaymentLoan\": \"234342\",\n        \"aprRepatriationEquity\": \"2343\",\n        \"aprRepatriationRoyalties\": \"234\",\n        \"aprRepatriationTechFees\": \"2343\",\n        \"aprRepatriationConsFees\": \"23424\",\n        \"aprRepatriationOtherFees\": \"2434\",\n        \"aprRepatriationProfit\": \"213\",\n        \"aprRepatriationRetainedEarning\": \"85746345\",\n        \"aprRepatriationFDIIndiaAmt\": \"34244\",\n        \"aprRepatriationRefundShare\": \"34\",\n        \"aprRepatriationCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprrepatriation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprrepatriation"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprrepatriation",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprRepatriationDetails\": {\n        \"aprRepatriationCode\": \"42343444444\",\n        \"aprRepatriationDate\": \"01/01/20\",\n        \"aprRepatriationDividend\": \"3243\",\n        \"aprRepatriationRepaymentLoan\": \"234767342\",\n        \"aprRepatriationEquity\": \"2343\",\n        \"aprRepatriationRoyalties\": \"234\",\n        \"aprRepatriationTechFees\": \"2343\",\n        \"aprRepatriationConsFees\": \"23424\",\n        \"aprRepatriationOtherFees\": \"2434\",\n        \"aprRepatriationProfit\": \"213\",\n        \"aprRepatriationRetainedEarning\": \"85746345\",\n        \"aprRepatriationFDIIndiaAmt\": \"34244\",\n        \"aprRepatriationRefundShare\": \"34\",\n        \"aprRepatriationCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprrepatriation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprrepatriation"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprrepatriation",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprRepatriationDetails\": {\n        \"aprRepatriationCode\": \"42343444444\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprrepatriation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprrepatriation"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprinvestmentsds",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprInvestmentSdsDetails\": {\n        \"aprInvestmentSdsName\": \"rwrsade\",\n        \"aprInvestmentSdsLevel\": \"34\",\n        \"aprInvestmentSdsCountry\": \"sdfdf\",\n        \"aprInvestmentSdsNameParent\": \"sdfsdf\",\n        \"aprInvestmentSdsLevelParent\": \"sfdf\",\n        \"aprInvestmentSdsCountryParent\": \"sdfdf\",\n        \"aprInvestmentSdsInvAmount\": \"1323\",\n        \"aprInvestmentSdsInvAmountDate\": \"01/01/20\",\n        \"aprInvestmentSdsInvType\": \"fsdf\",\n        \"aprInvestmentSdsType\": \"sdff\",\n        \"aprInvestmentSdsActivityCode\": \"132\",\n        \"aprInvestmentSdsPctStake\": \"32\",\n        \"aprInvestmentSdsDate\": \"01/01/20\",\n        \"aprInvestmentSdsCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprinvestmentsds",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprinvestmentsds"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprinvestmentsds",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprInvestmentSdsDetails\": {\n        \"aprInvestmentSdsName\": \"rsadwrsade\",\n        \"aprInvestmentSdsLevel\": \"32134\",\n        \"aprInvestmentSdsCountry\": \"sdfdf\",\n        \"aprInvestmentSdsNameParent\": \"sdfsdf\",\n        \"aprInvestmentSdsLevelParent\": \"sfdf\",\n        \"aprInvestmentSdsCountryParent\": \"sdfdf\",\n        \"aprInvestmentSdsInvAmount\": \"1323\",\n        \"aprInvestmentSdsInvAmountDate\": \"01/01/20\",\n        \"aprInvestmentSdsInvType\": \"fsdf\",\n        \"aprInvestmentSdsType\": \"sdff\",\n        \"aprInvestmentSdsActivityCode\": \"132\",\n        \"aprInvestmentSdsPctStake\": \"32\",\n        \"aprInvestmentSdsDate\": \"01/01/20\",\n        \"aprInvestmentSdsCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprinvestmentsds",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprinvestmentsds"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprinvestmentsds",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprInvestmentSdsDetails\": {\n        \"aprInvestmentSdsName\": \"rsadwrsade\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprinvestmentsds",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprinvestmentsds"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapstructure",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapStructureDetails\": {\n        \"aprCapStructureCode\": \"2331231\",\n        \"aprCapPartyName\": \"dasd\",\n        \"aprCapPartyType\": \"asds\",\n        \"aprCapPartyPct\": \"3424\",\n        \"aprCapPartyAmount\": \"23434\",\n        \"aprCapCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapstructure",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapStructureDetails\": {\n        \"aprCapStructureCode\": \"233123423\",\n        \"aprCapPartyName\": \"dasdasd\",\n        \"aprCapPartyType\": \"asds\",\n        \"aprCapPartyPct\": \"3424\",\n        \"aprCapPartyAmount\": \"23434\",\n        \"aprCapCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/aprcapstructure",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"aprCapStructureDetails\": {\n        \"aprCapStructureCode\": \"233123423\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/aprcapstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"aprcapstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9b369578-5f38-4a68-94e6-a609b0ff0ae0",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "477db00b-092e-4b7a-afdf-1b98a3420344",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Overseas Direct Investment",
+					"item": [
+						{
+							"name": "http://localhost:4001/odi/odicapitalstructure",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiCaptialStructureDetails\": {\n        \"odiCaptialStructureCode\": \"2131333\",\n        \"odiCapitalStructurePartyName\": \"asdsd\",\n        \"odiCapitalStructureStack\": \"132322\",\n        \"odiCapitalStructurePartyOrigin\": \"addadsd\",\n        \"odiCapitalStructureAmount\": \"1332\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odicapitalstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odicapitalstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odicapitalstructure",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiCaptialStructureDetails\": {\n        \"odiCaptialStructureCode\": \"213231333\",\n        \"odiCapitalStructurePartyName\": \"as232dsd\",\n        \"odiCapitalStructureStack\": \"132322\",\n        \"odiCapitalStructurePartyOrigin\": \"addadsd\",\n        \"odiCapitalStructureAmount\": \"1332\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odicapitalstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odicapitalstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odicapitalstructure",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiCaptialStructureDetails\": {\n        \"odiCaptialStructureCode\": \"213231333\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odicapitalstructure",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odicapitalstructure"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odijvwoscode",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiJvWosDetails\": {\n        \"odiJvWosCode\": \"13332322\",\n        \"odiJvWosIPName\": \"asdd\",\n        \"odiJvWosUID\": \"1323\",\n        \"odiJvWosADBank\": \"treter\",\n        \"odiJvWosName\": \"ffaddsa\",\n        \"odiJvWosAddress\": \"yrtyy\",\n        \"odiJvWosCountry\": \"weqwe\",\n        \"odiJvWosEmail\": \"a@a.com\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odijvwos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odijvwos"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odijvwoscode",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiJvWosDetails\": {\n        \"odiJvWosCode\": \"133123332322\",\n        \"odiJvWosIPName\": \"asassdd\",\n        \"odiJvWosUID\": \"1323\",\n        \"odiJvWosADBank\": \"treter\",\n        \"odiJvWosName\": \"ffaddsa\",\n        \"odiJvWosAddress\": \"yrtyy\",\n        \"odiJvWosCountry\": \"weqwe\",\n        \"odiJvWosEmail\": \"a@a.com\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odijvwos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odijvwos"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odijvwoscode",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiJvWosDetails\": {\n        \"odiJvWosCode\": \"133123332322\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odijvwos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odijvwos"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odipartyfinancial",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiPartyFinancialDetails\": {\n        \"odiPartyFinancialDate\": \" \",\n        \"odiPartyFinancialForexEarning\": \" \",\n        \"odiPartyFinancialNetProfit\": \" \",\n        \"odiPartyFinancialPaidupCapital\": \" \",\n        \"odiPartyFinancialNetWorth\": \" \",\n        \"odiPartyFinancialIndParty\": \" \",\n        \"odiPartyFinancialGroupCompany\": \" \",\n        \"currentDate\": \" \"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odipartyfinancial",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odipartyfinancial"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odipartyfinancial",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiPartyFinancialDetails\": {\n        \"partyCode\"  : \"1235423\",\n        \"odiPartyFinancialDate\":  \"01/01/20\",\n        \"odiPartyFinancialForexEarning\": \"32\",\n        \"odiPartyFinancialNetProfit\": \"12312\",\n        \"odiPartyFinancialPaidupCapital\": \"12323\",\n        \"odiPartyFinancialNetWorth\": \"12313\",\n        \"odiPartyFinancialIndParty\": \" dsda\",\n        \"odiPartyFinancialGroupCompany\": \"dasd\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odipartyfinancial",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odipartyfinancial"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odipartyfinancial",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiPartyFinancialDetails\": {\n        \"partyCode\"  : \"1235423\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odipartyfinancial",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odipartyfinancial"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispv",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvDetails\": {\n        \"odiSpvCode\": \"321333\",\n        \"odiSpvPurpose\": \"dwe\",\n        \"odiSpvFullAcquisationValue\": \"123\",\n        \"odiSpvInfusion\": \"21331\",\n        \"odiSpvGuarantedFund\": \"35455\",\n        \"odiSpvNonGuarantedFund\": \"34535\",\n        \"odiSpvEqFund\": \"3455\",\n        \"odiSpvSecuritisation\": \"6577\",\n        \"odiSpvOtherDetail\": \"fdgdg\",\n        \"odiSpvOtherDetailAmount\": \"234\",\n        \"odiSpvTotal\": \"3244\",\n        \"currentDate\": \"01/02/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispv",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvDetails\": {\n        \"odiSpvCode\": \"321333\",\n        \"odiSpvPurpose\": \"dw32e\",\n        \"odiSpvFullAcquisationValue\": \"123\",\n        \"odiSpvInfusion\": \"21331\",\n        \"odiSpvGuarantedFund\": \"35455\",\n        \"odiSpvNonGuarantedFund\": \"34535\",\n        \"odiSpvEqFund\": \"3455\",\n        \"odiSpvSecuritisation\": \"6577\",\n        \"odiSpvOtherDetail\": \"fdgdg\",\n        \"odiSpvOtherDetailAmount\": \"234\",\n        \"odiSpvTotal\": \"3244\",\n        \"currentDate\": \"01/02/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispv",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvDetails\": {\n        \"odiSpvCode\": \"321333\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispvinv",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvInvDetails\": {\n        \"odiSpvCode\": \"321333\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispvinv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispvinv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispvinv",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvInvDetails\": {\n        \"odiSpvInvCode\": \"32134431\",\n        \"odiSpvInvName\": \"asdad\",\n        \"odiSpvInvLevel\": \"aeesd\",\n        \"odiSpvInvCountry\": \"qeqwe\",\n        \"odiSpvInvNameParent\": \"ertrt\",\n        \"odiSpvInvLevelParent\": \"werr\",\n        \"odiSpvInvCountryParent\": \" dfgfg\",\n        \"odiSpvInvInvType\": \"etrt\",\n        \"odiSpvInvType\": \"ertre\",\n        \"odiSpvInvActivityCode\": \"21323\",\n        \"odiSpvInvAmount\": \"534554\",\n        \"odiSpvInvDate\": \"01/03/20\",\n        \"odiSpvInvPctParent\": \"1232\",\n        \"currentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispvinv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispvinv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odispvinv",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiSpvInvDetails\": {\n        \"odiSpvInvCode\": \"32134431\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odispvinv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odispvinv"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odi",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiDetails\": {\n        \"odiInvestmentRoute\": \"653336546\",\n        \"partyCode\": \"33334244\",\n        \"odiNetworth\": \"12323\",\n        \"odiNetworthonDate\": \"3453535\",\n        \"odiJvWosDetail\": true,\n        \"jvWosCode\": \"3123\",\n        \"odiInvestigation\": true,\n        \"investigationAgencyCode\": \"132\",\n        \"odiJvWosAccountingyear\": \"212\",\n        \"odiJvWosActivitycode\": \"323\",\n        \"odiJvWosEstimatedcostAcquisition\": \"2133\",\n        \"odiJvWosFinancialcommitmentcurrent\": \"13213\",\n        \"odiJvWosFinancialcommitmentAll\": \"12323\",\n        \"odiJvWosSPV\": true,\n        \"odiSpvCode\": \" 1233\",\n        \"odiCapitalStructureCode\": \"123123\",\n        \"odiSpvInvDetail\": true,\n        \"odiSpvInvDetailCode\": \"123123\",\n        \"odiSpvInvPurpose\": \"asdd\",\n        \"odiInvMethod\": \"sadsadd\",\n        \"odiInvCategory\": \"asdd\",\n        \"odiInvOtherDetail\": \"asdasdda\",\n        \"odiRemittanceAmount\": \"213123\",\n        \"odiDeclaration\": \"213213\",\n        \"odiPlace\": \"sdasddadsdd \",\n        \"odiDate\": \"01/01/20\",\n        \"odiCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odi",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiDetails\": {\n        \"odiInvestmentRoute\": \"653336546\",\n        \"partyCode\": \"33334244\",\n        \"odiNetworth\": \"12434323\",\n        \"odiNetworthonDate\": \"3453535\",\n        \"odiJvWosDetail\": true,\n        \"jvWosCode\": \"3123\",\n        \"odiInvestigation\": true,\n        \"investigationAgencyCode\": \"132\",\n        \"odiJvWosAccountingyear\": \"212\",\n        \"odiJvWosActivitycode\": \"323\",\n        \"odiJvWosEstimatedcostAcquisition\": \"2133\",\n        \"odiJvWosFinancialcommitmentcurrent\": \"13213\",\n        \"odiJvWosFinancialcommitmentAll\": \"12323\",\n        \"odiJvWosSPV\": true,\n        \"odiSpvCode\": \" 1233\",\n        \"odiCapitalStructureCode\": \"123123\",\n        \"odiSpvInvDetail\": true,\n        \"odiSpvInvDetailCode\": \"123123\",\n        \"odiSpvInvPurpose\": \"asdd\",\n        \"odiInvMethod\": \"sadsadd\",\n        \"odiInvCategory\": \"asdd\",\n        \"odiInvOtherDetail\": \"asdasdda\",\n        \"odiRemittanceAmount\": \"213123\",\n        \"odiDeclaration\": \"213213\",\n        \"odiPlace\": \"sdasddadsdd \",\n        \"odiDate\": \"01/01/20\",\n        \"odiCurrentDate\": \"01/01/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/odi/odi",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"odiDetails\": {\n        \"partyCode\": \"33334244\"\n       \n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/odi/odi",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"odi",
+										"odi"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Master Data",
+			"item": [
+				{
+					"name": "Bank",
+					"item": [
+						{
+							"name": "http://localhost:4001/masterdata/bank",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bankDetails\": {\n    \"bankCode\" : \"4822122113840\",\n    \"bankName\" : \"ABC12 BANK\",\n    \"bankAddress\" : \"Address 1\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/bank",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"bank"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/bank",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bankDetails\": {\n    \"bankCode\" : \"4822122113840\",\n    \"bankName\" : \"ABC12 BANK\",\n    \"bankAddress\" : \"Address 1\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/bank",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"bank"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/bank",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"bankDetails\": {\n    \"bankCode\" : \"4822122113840\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/bank",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"bank"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Party",
+					"item": [
+						{
+							"name": "http://localhost:4001/masterdata/party",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"partyDetails\": {\n       \"partyCode\" : \"23535144\",\n       \"partyName\" : \"Party Name\",\n       \"partyAddress\" : \"Address 1\",\n       \"panNumber\" : \"EE232392ER\",\n       \"partyStatus\" :  \"Active\"\n\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/party",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"party"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/party",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"partyDetails\": {\n       \"partyCode\" : \"23535144\",\n       \"partyName\" : \"PartyName\",\n       \"partyAddress\" : \"Address 1\",\n       \"panNumber\" : \"EE232392ER\",\n       \"partyStatus\" :  \"Active\"\n\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/party",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"party"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/party",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"partyDetails\": {\n       \"partyCode\" : \"23535144\"\n\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/party",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"party"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Investment",
+					"item": [
+						{
+							"name": "http://localhost:4001/masterdata/investment/",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investmentDetails\": {\n      \"investmentTypePartCode\" : \"321334830\",\n        \"investmentType\": \"Type .  1\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investment/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investment",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/investment/",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investmentDetails\": {\n      \"investmentTypePartCode\" : \"321334830\",\n        \"investmentType\": \"Type .  1\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investment/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investment",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/investment/",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investmentDetails\": {\n      \"investmentTypePartCode\" : \"321334830\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investment/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investment",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Investigation",
+					"item": [
+						{
+							"name": "http://localhost:4001/masterdata/investigation/",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investigationDetails\": {\n  \n         \"investigationAgencyCode\" : \"4324830\",\n        \"investigationAgencyName\" : \"Type 132\",\n        \"investigationFromDate\" :  \"01/01/20\",\n        \"investigationtoDate\" : \"01/03/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investigation/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investigation",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/investigation/",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investigationDetails\": {\n  \n         \"investigationAgencyCode\" : \"4324830\",\n        \"investigationAgencyName\" : \"Type 132\",\n        \"investigationFromDate\" :  \"01/01/20\",\n        \"investigationtoDate\" : \"01/03/20\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investigation/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investigation",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:4001/masterdata/investigation/",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"investigationDetails\": {\n         \"investigationAgencyCode\" : \"4324830\"\n    }\n}"
+								},
+								"url": {
+									"raw": "http://localhost:4001/masterdata/investigation/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4001",
+									"path": [
+										"masterdata",
+										"investigation",
+										""
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

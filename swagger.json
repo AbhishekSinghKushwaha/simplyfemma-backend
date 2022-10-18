@@ -1,0 +1,207 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Simply-Fema-Backend",
+        "description": "JWT Token based Rest API with CRUD Operations on Mongo with NodeJs"
+    },
+    "host": "https://jwt-rest-api-crud-nodejs.herokuapp.com",
+    "basePath": "/",
+    "tags": [{
+            "name": "Agency",
+            "description": "API for Creating Agency in the Database with required Fields with JWT token"
+        },
+        {
+            "name": "Client",
+            "description": "API for Creating Client in the Database with required Fields mapped with Agency Id and JWT token passed in the Header"
+        }
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "name": "Authorization",
+            "description": "API Token",
+            "type": "apiKey",
+            "in": "header"
+        }
+    },
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/agency": {
+            "post": {
+                "tags": [
+                    "Agency"
+                ],
+                "summary": "Create new Agency with Client or adds Client to existing Agency in Database ",
+                "description": "Create new Agency with Client or adds Client to existing Agency in Database with required fields",
+                "parameters": [{
+                    "name": "agency",
+                    "in": "body",
+                    "description": "Agency with Client that we want to create or add Client to existing Agency",
+                    "schema": {
+                        "$ref": "#/definitions/Agency"
+                    }
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "New Agency with Client is created or added Client to existing Agency",
+                        "schema": {
+                            "$ref": "#/definitions/Agency"
+                        }
+                    }
+                }
+            }
+        },
+        "/client": {
+            "put": {
+                "tags": [
+                    "Client"
+                ],
+                "summary": "Update  Client in Database",
+                "description": "Update Client in Database",
+                "parameters": [{
+                    "name": "Client",
+                    "in": "body",
+                    "description": "Client that we want to update",
+                    "schema": {
+                        "$ref": "#/definitions/Client"
+                    }
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Client is updated",
+                        "schema": {
+                            "$ref": "#/definitions/Client"
+                        }
+                    }
+                }
+            }
+        },
+
+        "/agency/getAllAgencies": {
+            "get": {
+                "tags": [
+                    "Agency"
+                ],
+                "security": [{
+                    "Bearer": []
+                }],
+                "summary": "Get Agencies",
+                "responses": {
+                    "200": {
+                        "description": "List of Agencies",
+                        "schema": {
+                            "$ref": "#/definitions/Agency"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Agency": {
+            "required": [
+                "name",
+                "email",
+                "address1",
+                "address2",
+                "state",
+                "city",
+                "phone"
+            ],
+            "properties": {
+
+                "email": {
+                    "type": "string",
+                    "uniqueItems": true
+                },
+                "name": {
+                    "type": "string"
+                },
+                "address1": {
+                    "type": "string"
+                },
+                "address2": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "number"
+                }
+            },
+            "example": {
+                "agencyDetails": {
+                    "name": "Agency10",
+                    "email": "Agency10@gmail.com",
+                    "address1": "address4",
+                    "address2": "address4",
+                    "state": "Maharashtra4",
+                    "city": "Mumbai4",
+                    "phone": "898424332"
+                },
+                "clientDetails": {
+                    "name": "Client11",
+                    "email": "client11@gmail.com",
+                    "phone": "898424332",
+                    "totalBill": "649594"
+                }
+            }
+        },
+
+
+        "Client": {
+            "required": [
+                "name",
+                "email",
+                "phone",
+                "totalBill"
+            ],
+            "properties": {
+
+                "email": {
+                    "type": "string",
+                    "uniqueItems": true
+                },
+                "name": {
+                    "type": "string"
+                },
+
+                "phone": {
+                    "type": "number"
+                },
+                "Total Bill": {
+                    "type": "number"
+                }
+            },
+
+            "example": {
+                "clientDetails": {
+                    "name": "Client11",
+                    "email": "client11@gmail.com",
+                    "phone": "898424332",
+                    "totalBill": "649594"
+                }
+            }
+        }
+
+    }
+}
